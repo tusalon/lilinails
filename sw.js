@@ -1,22 +1,22 @@
-// sw.js - Service Worker para Adri’s Nails
+// sw.js - Service Worker para Lilis Nails Studio
 
-const CACHE_NAME = 'adris-nails-v1';
+const CACHE_NAME = 'lilis-nails-studio-v1';
 const urlsToCache = [
-  '/adris-nails/',
-  '/adris-nails/index.html',
-  '/adris-nails/admin.html',
-  '/adris-nails/admin-login.html',
-  '/adris-nails/setup-wizard.html',
-  '/adris-nails/editar-negocio.html',
-  '/adris-nails/manifest.json',
-  '/adris-nails/icons/icon-72x72.png',
-  '/adris-nails/icons/icon-96x96.png',
-  '/adris-nails/icons/icon-128x128.png',
-  '/adris-nails/icons/icon-144x144.png',
-  '/adris-nails/icons/icon-152x152.png',
-  '/adris-nails/icons/icon-192x192.png',
-  '/adris-nails/icons/icon-384x384.png',
-  '/adris-nails/icons/icon-512x512.png'
+  '/lilis-nails-studio/',
+  '/lilis-nails-studio/index.html',
+  '/lilis-nails-studio/admin.html',
+  '/lilis-nails-studio/admin-login.html',
+  '/lilis-nails-studio/setup-wizard.html',
+  '/lilis-nails-studio/editar-negocio.html',
+  '/lilis-nails-studio/manifest.json',
+  '/lilis-nails-studio/icons/icon-72x72.png',
+  '/lilis-nails-studio/icons/icon-96x96.png',
+  '/lilis-nails-studio/icons/icon-128x128.png',
+  '/lilis-nails-studio/icons/icon-144x144.png',
+  '/lilis-nails-studio/icons/icon-152x152.png',
+  '/lilis-nails-studio/icons/icon-192x192.png',
+  '/lilis-nails-studio/icons/icon-384x384.png',
+  '/lilis-nails-studio/icons/icon-512x512.png'
 ];
 
 // ============================================
@@ -108,7 +108,7 @@ self.addEventListener('fetch', event => {
           }
           // Si no hay cache y es imagen, devolver icon por defecto
           if (event.request.url.match(/\.(jpg|jpeg|png|gif|svg|webp)$/)) {
-            return caches.match('/adris-nails/icons/icon-192x192.png');
+            return caches.match('/lilis-nails-studio/icons/icon-192x192.png');
           }
           return new Response('Error de red', { status: 408 });
         });
@@ -138,6 +138,6 @@ self.addEventListener('message', event => {
   }
 });
 
-console.log('✅ Service Worker configurado para Adri’s Nails');
+console.log('✅ Service Worker configurado para Lilis Nails Studio');
 console.log('📦 Cache:', CACHE_NAME);
 console.log('📄 Archivos a cachear:', urlsToCache.length);

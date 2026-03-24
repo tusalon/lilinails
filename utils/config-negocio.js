@@ -1,12 +1,12 @@
 // utils/config-negocio.js - VERSIÓN MULTI-TENANT CORREGIDA
-// CLIENTE: Adri’s Nails
+// CLIENTE: Lilis Nails Studio
 
 console.log('🏢 config-negocio.js cargado');
 
 // ============================================
 // 🔥 CONFIGURACIÓN POR CLIENTE - ¡LO ÚNICO QUE CAMBIA!
 // ============================================
-const NEGOCIO_ID_POR_DEFECTO = '18178cc2-4134-4684-9ec7-10f00f136191'; // ID de Adri’s Nails
+const NEGOCIO_ID_POR_DEFECTO = 'df6e2560-d892-4667-843f-75aa4c91d67b'; // ID de Lilis Nails Studio
 
 // Hacer accesible globalmente
 window.NEGOCIO_ID_POR_DEFECTO = NEGOCIO_ID_POR_DEFECTO;
@@ -116,7 +116,7 @@ window.cargarConfiguracionNegocio = async function(forceRefresh = false) {
  */
 window.getNombreNegocio = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.nombre || 'Adri’s Nails';
+    return config?.nombre || 'Lilis Nails Studio';
 };
 
 /**
@@ -124,7 +124,7 @@ window.getNombreNegocio = async function() {
  */
 window.getTelefonoDuenno = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.telefono || '55113213';
+    return config?.telefono || '53235916 ';
 };
 
 /**
@@ -132,7 +132,7 @@ window.getTelefonoDuenno = async function() {
  */
 window.getEmailNegocio = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.email || 'drnreyesrodriguez@gmail.com';
+    return config?.email || 'amelima.1989@gmail.com';
 };
 
 /**
@@ -164,7 +164,7 @@ window.getHorarioAtencion = async function() {
  */
 window.getMensajeBienvenida = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.mensaje_bienvenida || '¡Bienvenida a Adri’s Nails!';
+    return config?.mensaje_bienvenida || '¡Bienvenida a Lilis Nails Studio!';
 };
 
 /**
@@ -180,7 +180,7 @@ window.getMensajeConfirmacion = async function() {
  */
 window.getNtfyTopic = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.ntfy_topic || 'adris-nails';
+    return config?.ntfy_topic || 'lilis-nails-studio';
 };
 
 /**
@@ -205,5 +205,5 @@ setTimeout(async () => {
     await window.cargarConfiguracionNegocio();
 }, 500);
 
-console.log('✅ config-negocio.js listo para Adri’s Nails');
+console.log('✅ config-negocio.js listo para Lilis Nails Studio');
 console.log('🏷️  ID configurado:', NEGOCIO_ID_POR_DEFECTO);

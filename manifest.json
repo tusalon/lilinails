@@ -1,20 +1,20 @@
 {
-  "name": "Adri’s Nails",
-  "short_name": "Adri’s",
+  "name": "Lilis Nails Studio",
+  "short_name": "Lilis",
   "description": "Uñas y belleza - Tu espacio de cuidado personal",
-  "start_url": "/adris-nails/",
-  "scope": "/adris-nails/",
+  "start_url": "/lilis-nails-studio/",
+  "scope": "/lilis-nails-studio/",
   "display": "standalone",
   "background_color": "#ec4899",
   "theme_color": "#ec4899",
   "icons": [
     {
-      "src": "/adris-nails/icons/icon-192x192.png",
+      "src": "/lilis-nails-studio/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/adris-nails/icons/icon-512x512.png",
+      "src": "/lilis-nails-studio/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
