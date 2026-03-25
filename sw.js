@@ -1,22 +1,22 @@
 // sw.js - Service Worker para Lilis Nails Studio
 
-const CACHE_NAME = 'lilis-nails-studio-v1';
+const CACHE_NAME = 'lilinails-v1';
 const urlsToCache = [
-  '/lilis-nails-studio/',
-  '/lilis-nails-studio/index.html',
-  '/lilis-nails-studio/admin.html',
-  '/lilis-nails-studio/admin-login.html',
-  '/lilis-nails-studio/setup-wizard.html',
-  '/lilis-nails-studio/editar-negocio.html',
-  '/lilis-nails-studio/manifest.json',
-  '/lilis-nails-studio/icons/icon-72x72.png',
-  '/lilis-nails-studio/icons/icon-96x96.png',
-  '/lilis-nails-studio/icons/icon-128x128.png',
-  '/lilis-nails-studio/icons/icon-144x144.png',
-  '/lilis-nails-studio/icons/icon-152x152.png',
-  '/lilis-nails-studio/icons/icon-192x192.png',
-  '/lilis-nails-studio/icons/icon-384x384.png',
-  '/lilis-nails-studio/icons/icon-512x512.png'
+  '/lilinails/',
+  '/lilinails/index.html',
+  '/lilinails/admin.html',
+  '/lilinails/admin-login.html',
+  '/lilinails/setup-wizard.html',
+  '/lilinails/editar-negocio.html',
+  '/lilinails/manifest.json',
+  '/lilinails/icons/icon-72x72.png',
+  '/lilinails/icons/icon-96x96.png',
+  '/lilinails/icons/icon-128x128.png',
+  '/lilinails/icons/icon-144x144.png',
+  '/lilinails/icons/icon-152x152.png',
+  '/lilinails/icons/icon-192x192.png',
+  '/lilinails/icons/icon-384x384.png',
+  '/lilinails/icons/icon-512x512.png'
 ];
 
 // ============================================
@@ -108,7 +108,7 @@ self.addEventListener('fetch', event => {
           }
           // Si no hay cache y es imagen, devolver icon por defecto
           if (event.request.url.match(/\.(jpg|jpeg|png|gif|svg|webp)$/)) {
-            return caches.match('/lilis-nails-studio/icons/icon-192x192.png');
+            return caches.match('/lilinails/icons/icon-192x192.png');
           }
           return new Response('Error de red', { status: 408 });
         });
