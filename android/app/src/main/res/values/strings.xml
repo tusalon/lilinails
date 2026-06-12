@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Lilis Nails Studio</string>
+    <string name="title_activity_main">Lilis Nails Studio</string>
+    <string name="package_name">com.tusalon.lilisnails</string>
+    <string name="custom_url_scheme">com.tusalon.lilisnails</string>
+</resources>

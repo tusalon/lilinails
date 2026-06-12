@@ -1,6 +1,6 @@
 // sw.js - Service Worker para Lilis Nails Studio
 
-const CACHE_NAME = 'lilinails-v49';
+const CACHE_NAME = 'lilinails-v53';
 const urlsToCache = [
   '/lilinails/',
   '/lilinails/index.html',
